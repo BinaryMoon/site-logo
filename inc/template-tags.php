@@ -81,14 +81,14 @@ function the_site_logo() {
 	}
 
 	// We have a logo. Logo is go.
-	$html = sprintf( '<a href="%1$s" rel="home">%2$s</a>',
+	$html = sprintf( '<a href="%1$s" rel="home" class="site-logo">%2$s</a>',
 		esc_url( home_url( '/' ) ),
 		wp_get_attachment_image(
 			$logo['id'],
 			$size,
 			false,
 			array(
-				'class'     => "site-logo attachment-$size",
+				'class'     => "attachment-$size",
 				'data-size' => $size,
 			)
 		)
